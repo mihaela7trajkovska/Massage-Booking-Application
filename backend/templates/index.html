@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Massage Booking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+   <h1 style="text-align: center; margin-top: 30px; font-family: Arial, sans-serif; color: #444;">
+        Relax Massage Studio
+    </h1>
+    <div class="container">
+        <h1>💆‍♀️ Резервирај Масажа</h1>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="/book" class="booking-form">
+            <input type="text" name="name" placeholder="Име и презиме" required>
+            <input type="text" name="phone" placeholder="Телефон" required>
+            <input type="datetime-local" name="time" required>
+
+            <select name="massage_type" required>
+                <option value="">-- Избери тип на масажа --</option>
+                <option value="Класична масажа">💆 Класична масажа</option>
+                <option value="Спортска масажа">🏋️ Спортска масажа</option>
+                <option value="Арома терапија">🌺 Арома терапија</option>
+                <option value="Антистрес масажа">🧘 Антистрес масажа</option>
+                <option value="Медицинска масажа">🏥 Медицинска масажа</option>
+            </select>
+
+            <button type="submit">Резервирај термин</button>
+        </form>
+
+        <h2>📋 Закажани термини</h2>
+        <ul class="appointments">
+            {% for appt in appointments %}
+                <li>
+                    <strong>{{ appt.client_name }}</strong> 📞 {{ appt.phone }}<br>
+                    🗓 {{ appt.time.strftime('%d.%m.%Y %H:%M') }}<br>
+                    🧴 Масажа: <em>{{ appt.massage_type }}</em>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
