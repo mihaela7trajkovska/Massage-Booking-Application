@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: massage-app
+  namespace: massage-booking
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: massage-app
+  template:
+    metadata:
+      labels:
+        app: massage-app
+    spec:
+      containers:
+        - name: app
+          image: mihaelatrajkovska/massage-booking-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+          command:
+            - "./wait-for-it.sh"
+            - "massage-db"
+            - "5432"
+            - "--"
+            - "flask"
+            - "run"
+            - "--host=0.0.0.0"
+          env:
+            - name: DATABASE_URL
+              value: "postgresql://postgres:postgres@massage-db:5432/massage_db"
+
+            - name: FLASK_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: massage-app-config
+                  key: FLASK_ENV
+
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: massage-app-config
+                  key: DB_HOST
+
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: massage-app-config
+                  key: DB_NAME
+
+            - name: DB_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: massage-app-config
+                  key: DB_USER
+
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: massage-app-secret
+                  key: DB_PASSWORD

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: massage-app-service
+  namespace: massage-booking
+spec:
+  selector:
+    app: massage-app
+  ports:
+    - port: 80
+      targetPort: 5000
+  type: ClusterIP

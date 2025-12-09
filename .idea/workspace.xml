@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5474bcdd-304c-4eab-94d3-086e1b22f029" name="Changes" comment="New version" />
+    <list default="true" id="5474bcdd-304c-4eab-94d3-086e1b22f029" name="Changes" comment="Add GitHub Actions CI pipeline for Docker build &amp; push">
+      <change afterPath="$PROJECT_DIR$/k8s/app-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/app-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/config-secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/db-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/namespace.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +47,10 @@
     "url": "https://github.com/mihaela7trajkovska/Massage-Booking-Application",
     "accountId": "b97c74a4-dd9b-45b3-a1bf-e20fd730c48f"
   }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
 }]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -95,7 +112,7 @@
       <workItem from="1749319306382" duration="2496000" />
       <workItem from="1750083191741" duration="128000" />
       <workItem from="1750093322470" duration="5980000" />
-      <workItem from="1765210467559" duration="4783000" />
+      <workItem from="1765210467559" duration="10878000" />
     </task>
     <task id="LOCAL-00001" summary="New version">
       <option name="closed" value="true" />
@@ -105,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765283542711</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add GitHub Actions CI pipeline for Docker build &amp; push">
+      <option name="closed" value="true" />
+      <created>1765285581412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765285581412</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +149,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New version" />
-    <option name="LAST_COMMIT_MESSAGE" value="New version" />
+    <MESSAGE value="Add GitHub Actions CI pipeline for Docker build &amp; push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GitHub Actions CI pipeline for Docker build &amp; push" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/massage_booking_app$appointments.coverage" NAME="appointments Coverage Results" MODIFIED="1750094816415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/routes" />
