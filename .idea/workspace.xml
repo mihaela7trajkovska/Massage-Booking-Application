@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5474bcdd-304c-4eab-94d3-086e1b22f029" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/massage_booking_app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/routes/appointments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wait-for-it.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfefd382-b0c7-4103-84cc-51ffa9321245.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dfefd382-b0c7-4103-84cc-51ffa9321245.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/massage_booking_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/massage_booking_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wait-for-it.sh" beforeDir="false" afterPath="$PROJECT_DIR$/wait-for-it.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mihaela7trajkovska"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mihaela7trajkovska/Massage-Booking-Application",
+    "accountId": "b97c74a4-dd9b-45b3-a1bf-e20fd730c48f"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -66,6 +73,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -100,6 +108,7 @@
       <workItem from="1749319306382" duration="2496000" />
       <workItem from="1750083191741" duration="128000" />
       <workItem from="1750093322470" duration="5980000" />
+      <workItem from="1765210467559" duration="4052000" />
     </task>
     <servers />
   </component>
